@@ -17,7 +17,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:monospace 8 #DEFAULT
-font pango:scientifica regular 12
+font pango:scientifica regular 15
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -200,10 +200,8 @@ bar {
         separator_symbol " "
 }
 
-client.focused #ffa849 #ffa849 #000000 
+client.focused #ffa849 #ffa849 #000000 #ffa849
 client.unfocused #383838 #383838 #ffffff 
-
-
 
 # fix the blackscreen when using integrated graphics
 exec xrandr --auto
