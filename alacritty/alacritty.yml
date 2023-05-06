@@ -1,3 +1,5 @@
+# changed from .config
+
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Import additional configuration files
@@ -195,8 +197,8 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#252525'
-    foreground: '#c5c8c6'
+    background: '#32302f'
+    foreground: '#ebdbb2'
 
     # Bright and dim foreground colors
     #
@@ -288,15 +290,28 @@ colors:
   #  background: CellForeground
 
   # Normal colors
+  # custom color 1
+   #normal:
+   #  black:   '#383838'
+   #  red:     '#f24c4c' # custom
+   #  green:   '#ffa849' # custom (turn into orange)
+   #  yellow:  '#f0c674'
+   #  blue:    '#e0c97e' # custom
+   #  magenta: '#ad8370' # custom
+   #  cyan:    '#a4a391' # custom
+   #  white:   '#c5c8c6'
+  
+  # gruvbox
   normal:
-    black:   '#383838'
-    red:     '#f24c4c' # custom
-    green:   '#ffa849' # custom (turn into orange)
-    yellow:  '#f0c674'
-    blue:    '#e0c97e' # custom
-    magenta: '#ad8370' # custom
-    cyan:    '#a4a391' # custom
-    white:   '#c5c8c6'
+    black:   '#32302f'
+    red:     '#fb4934'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#83a598'
+    magenta: '#d3869b'
+    cyan:    '#8ec07c'
+    white:   '#ebdbb2'
+
 
   # Bright colors
   #bright:
