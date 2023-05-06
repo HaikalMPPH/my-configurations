@@ -209,7 +209,9 @@ client.unfocused #383838 #383838 #ffffff
 exec xrandr --auto
 
 # change background image
-exec --no-startup-id feh --bg-scale Pictures/snowy-wallpaper.jpg 
+exec --no-startup-id feh --bg-scale Pictures/neon-city.jpg 
+
+# flameshot screenshot
 exec --no-startup-id flameshot
 
 # screenshot with flameshot

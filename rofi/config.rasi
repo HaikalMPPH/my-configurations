@@ -1,3 +1,5 @@
+// changed from .config
+
 configuration {
 /*	modi: "window,run,ssh";*/
 	font: "scientifica 11";
