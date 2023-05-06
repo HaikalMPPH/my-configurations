@@ -2,32 +2,32 @@
  * Author: Primetoxinz
  */
 * {
-    text-color:                  #c5c8c6;
-    background-color:            #383838;
-    lightbg:                     #534c48;
+    text-color:                  #ebdbb2;
+    background-color:            #32302f;
+    lightbg:                     #32302f;
     //red:                         #f24c4c;
-    orange:                      #ffa849; 
+    orange:                      #504945; 
     //blue:                        #48b9c7;
-
+    //foreground: #ebdbb2;
     // custom color
-    black:    #383838;
+    black:    #32302f;
     red:      #f24c4c;
     green:    #ffa849;
     yellow:   #f0c674;
     blue:     #e0c97e;
     magenta:  #ad8370;
     cyan:     #a4a391;
-    white:    #c5c8c6;
+    white:    #ebdbb2;
 
 
-    selected-normal-foreground:  @black; //@foreground;
+    selected-normal-foreground:  @white; //@foreground;
     normal-foreground:           @foreground;
     alternate-normal-background: @background;
     selected-urgent-foreground:  @foreground;
     urgent-foreground:           @foreground;
     alternate-urgent-background: @background;
-    active-foreground:           @black;
-    selected-active-foreground:  @black; //@foreground;
+    active-foreground:           @white;
+    selected-active-foreground:  @white; //@foreground;
     alternate-normal-foreground: @foreground;
     alternate-active-background: @orange;
     bordercolor:                 @foreground;
@@ -44,7 +44,7 @@
 }
 window {
     border:     0;
-    text-color: @foreground;
+    text-color: @white; //@foreground;
     background-color: rgba ( 0, 0, 0, 0 % );
     padding:    5;
     text-color: @bordercolor;
@@ -60,7 +60,7 @@ message {
     padding:    2px 0px 0px ;
 }
 textbox {
-    text-color: @foreground;
+    text-color: #504945;
 }
 listview {
     fixed-height: 0;
@@ -77,7 +77,7 @@ element-text {
 }
 element.normal.normal {
     text-color: @normal-foreground;
-    background-color: #383838; //@normal-background;
+    background-color: @normal-background;
 }
 element.normal.urgent {
     text-color: @urgent-foreground;
@@ -121,6 +121,7 @@ button selected {
 inputbar {
     spacing: 0;
     border: 0px ;
+    backgrund-color: #504945;
 }
 button normal {
     text-color: @foreground;
