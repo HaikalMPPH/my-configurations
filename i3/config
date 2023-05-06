@@ -202,7 +202,7 @@ bar {
         separator_symbol " "
 }
 
-client.focused #504945 #504945 #ebdbb2 #504945 #32302f
+client.focused #504945 #504945 #ebdbb2 #32302f #32302f
 client.unfocused #32302f #32302f #ebdbb2 #32302f
 client.focused_inactive #32302f #32302f #ebdbb2 #32302f
 
