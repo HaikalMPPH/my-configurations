@@ -2,7 +2,7 @@
 
 configuration {
 /*	modi: "window,run,ssh";*/
-	font: "scientifica 15";
+	font: "scientifica bold 15";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/

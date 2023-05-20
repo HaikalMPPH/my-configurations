@@ -1,5 +1,3 @@
-# changed from .config
-
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Import additional configuration files
@@ -11,19 +9,19 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-  - ./alacritty.yml
+  - ~/.config/alacritty/alacritty.yml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  #TERM: alacritty
+  TERM: alacritty
 
 window:
   # Window dimensions (changes require restart)
@@ -87,7 +85,7 @@ window:
   #title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
-  dynamic_title: true
+  #dynamic_title: true
 
   # Window class (Linux/BSD only):
   #class:
@@ -102,6 +100,11 @@ window:
   # decorations. Commonly supported values are `Dark`, `Light`, and `None` for
   # auto pick-up. Set this to `None` to use the default theme variant.
   #decorations_theme_variant: None
+
+  # Resize increments
+  #
+  # Prefer resizing window by discrete steps equal to cell dimensions.
+  #resize_increments: false
 
   # Make `Option` key behave as `Alt` (macOS only):
   #   - OnlyLeft
@@ -119,55 +122,55 @@ window:
   #multiplier: 3
 
 # Font configuration
-font:
+#font:
   # Normal (roman) font face
-  normal:
+  #normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: scientifica
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    #style: Regular
 
   # Bold font face
-  bold:
+  #bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: scientifica
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    #style: Bold
 
-  # Italic font fce
-  italic:
+  # Italic font face
+  #italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: scientifica
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: italic
+    #style: Italic
 
   # Bold italic font face
-  bold_italic:
+  #bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: scientifica
+    #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    style: bold italic
+    #style: Bold Italic
 
   # Point size
-  size: 11.0
+  #size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -194,11 +197,11 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-colors:
+#colors:
   # Default colors
-  primary:
-    background: '#32302f'
-    foreground: '#ebdbb2'
+  #primary:
+  #  background: '#1d1f21'
+  #  foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
     #
@@ -290,28 +293,15 @@ colors:
   #  background: CellForeground
 
   # Normal colors
-  # custom color 1
-   #normal:
-   #  black:   '#383838'
-   #  red:     '#f24c4c' # custom
-   #  green:   '#ffa849' # custom (turn into orange)
-   #  yellow:  '#f0c674'
-   #  blue:    '#e0c97e' # custom
-   #  magenta: '#ad8370' # custom
-   #  cyan:    '#a4a391' # custom
-   #  white:   '#c5c8c6'
-  
-  # gruvbox
-  normal:
-    black:   '#32302f'
-    red:     '#fb4934'
-    green:   '#b8bb26'
-    yellow:  '#fabd2f'
-    blue:    '#83a598'
-    magenta: '#d3869b'
-    cyan:    '#8ec07c'
-    white:   '#ebdbb2'
-
+  #normal:
+  #  black:   '#1d1f21'
+  #  red:     '#cc6666'
+  #  green:   '#b5bd68'
+  #  yellow:  '#f0c674'
+  #  blue:    '#81a2be'
+  #  magenta: '#b294bb'
+  #  cyan:    '#8abeb7'
+  #  white:   '#c5c8c6'
 
   # Bright colors
   #bright:
@@ -634,6 +624,7 @@ colors:
 #   - Quit
 #       Quit Alacritty.
 #   - ToggleFullscreen
+#   - ToggleMaximized
 #   - SpawnNewInstance
 #       Spawn a new instance of Alacritty.
 #   - CreateNewWindow
@@ -777,7 +768,7 @@ colors:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-key_bindings:
+#key_bindings:
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
@@ -859,7 +850,7 @@ key_bindings:
   #- { key: Insert,         mods: Shift,                           action: PasteSelection   }
   #- { key: Key0,           mods: Control,                         action: ResetFontSize    }
   #- { key: Equals,         mods: Control,                         action: IncreaseFontSize }
-  - { key: Plus,           mods: Control,                         action: IncreaseFontSize }
+  #- { key: Plus,           mods: Control,                         action: IncreaseFontSize }
   #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
   #- { key: Minus,          mods: Control,                         action: DecreaseFontSize }
   #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
